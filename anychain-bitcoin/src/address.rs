@@ -122,7 +122,7 @@ impl<N: BitcoinNetwork> Address for BitcoinAddress<N> {
         format: &Self::Format,
     ) -> Result<Self, AddressError> {
         Self::PublicKey::from_secret_key(secret_key).to_address(format)
-    }
+    }j
 
     /// Returns the address corresponding to the given Bitcoin public key.
     fn from_public_key(
